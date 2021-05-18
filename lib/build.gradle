@@ -1,0 +1,12 @@
+apply plugin: 'java-library'
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation files('libs/commons-codec-1.11.jar')
+}
+
+sourceCompatibility = "7"
+targetCompatibility = "7"
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+}
